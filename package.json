@@ -1,0 +1,24 @@
+{
+  "name": "qa-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.3",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-downloadfile": "^1.2.3",
+    "node-xlsx": "^0.23.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/e2e/FunctionalTests/Tests/step_definitions"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}
