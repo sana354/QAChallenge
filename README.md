@@ -3,7 +3,7 @@
 
 ### Test Cases/flows that are implemented:
 * Downloading Time Tracking Reports
-* Verify that the file is downloaded to the designated download folder
+* Verify that the file is downloaded to the designated download folder (downloads folder)
 * Switching to Basic Terminal mode
 * Clock In - START WORK
 * Initiate START BREAK
@@ -28,6 +28,7 @@ There are 2 ways one can execute test cases:
 
 1. Headed Mode
 * IDE Terminal run command "npx cypress open"
+* Select E2E testing
 * Choose your desired browser to run specs
 * Select/Click "Run 2 specs" in order to run all the specs/tests
 

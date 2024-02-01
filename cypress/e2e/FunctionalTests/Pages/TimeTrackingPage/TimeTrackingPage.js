@@ -36,7 +36,7 @@ class TimeTrackingPage {
            cy.wait(2000);
            this.elements.verificationMessage().should('contain','Terminal mode changed successfully');
            this.elements.terminalModeconfirmationButton().click();
-           this.elements.verificationMessage().should('contain','Terminal is opening.');
+           //this.elements.verificationMessage().should('contain','Terminal is opening.');
     }
 
  

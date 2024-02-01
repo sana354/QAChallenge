@@ -1,12 +1,11 @@
 /// <reference types="cypress" />
-//const fs = require('fs');
 
 import { Given, When, Then ,And} from 'cypress-cucumber-preprocessor/steps'
 import TimeTrackingReportPage from '../../Pages/TimeTrackingReportPage/TimeTrackingReportPage'
 const timeTrackingReportPage = new TimeTrackingReportPage();
 
  before(() => {
-    cy.task('deleteFolder', 'cypress/downloads/All_data_01.01.2024_-_31.01.2024.xlsx')
+    cy.task('deleteFolder', 'cypress/downloads/All_data_01.02.2024_-_29.02.2024.xlsx')
     cy.fixture('login_credentials').then(credentials => {
     cy.login(credentials.username, credentials.password);
 })
