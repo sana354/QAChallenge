@@ -5,7 +5,8 @@ class TimeTrackingReportPage {
 
        timeTrackingReportOption : () =>  cy.get('#navigation-time-tracking-reports > ._5kaapu > ._jj50j2'),
        dropdownOption: () => cy.get('._1wnuba3'),
-       excelfileOption: () => cy.get('._1x5ay5u > :nth-child(2)')
+       excelfileOption: () => cy.get('._1x5ay5u > :nth-child(2)'),
+       refreshDataButton: () =>  cy.get('._mw2scw')
 
     }
   }
@@ -20,7 +21,7 @@ class TimeTrackingReportPage {
 
     downloadReports(){
          
-              cy.get('._mw2scw').click() //Refresh data
+              this.elements.refreshDataButton().click() //Refresh data
               this.elements.dropdownOption().should('be.visible').click({ force: true });
               cy.wait(4000);
               this.elements.excelfileOption().should('be.visible').click({ force: true });
