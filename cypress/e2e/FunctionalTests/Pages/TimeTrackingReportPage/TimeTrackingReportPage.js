@@ -20,7 +20,7 @@ class TimeTrackingReportPage {
 }
 
     downloadReports(){
-         
+              cy.wait(2000) 
               this.elements.refreshDataButton().click() //Refresh data
               this.elements.dropdownOption().should('be.visible').click({ force: true });
               cy.wait(4000);
